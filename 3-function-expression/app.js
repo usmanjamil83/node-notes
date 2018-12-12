@@ -4,7 +4,7 @@ function callFunction(fun) {
 
 
 // function expression
-var sayBye = function() {
+var sayBye = function () {
     console.log('bye');
 };
 

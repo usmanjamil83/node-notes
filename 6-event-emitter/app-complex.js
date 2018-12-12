@@ -1,7 +1,7 @@
 const events = require('events');
 const util = require('util');
 
-var Person = function(name) {
+var Person = function (name) {
     this.name = name;
 };
 
@@ -12,8 +12,8 @@ var may = new Person('may');
 var june = new Person('june');
 var people = [james, may, june];
 
-people.forEach(function(person) {
-    person.on('speak', function(msg) {
+people.forEach(function (person) {
+    person.on('speak', function (msg) {
         console.log(person.name + ' said: ' + msg);
     });
 });

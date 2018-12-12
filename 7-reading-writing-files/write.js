@@ -4,4 +4,4 @@ const fs = require('fs');
 fs.writeFileSync('text.txt', 'that');
 
 // async method
-fs.writeFile('text.txt', 'that', function(err) {});
+fs.writeFile('text.txt', 'that', function (err) {});

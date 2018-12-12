@@ -4,9 +4,9 @@ const fs = require('fs');
 // creating directories
 // first run this to create directory and a file in that directory
 
-fs.mkdir('new', function() {
-    fs.readFile('text.txt', 'utf8', function(err, data) {
-        fs.writeFile('./new/text.txt', data, function(err) {});
+fs.mkdir('new', function () {
+    fs.readFile('text.txt', 'utf8', function (err, data) {
+        fs.writeFile('./new/text.txt', data, function (err) {});
     });
 });
 

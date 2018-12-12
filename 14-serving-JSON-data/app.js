@@ -4,11 +4,15 @@ const fs = require('fs');
 const server = http.createServer(function (req, res) {
     console.log('request was made: ' + req.url);
     res.writeHead(200, {
-        'Content-type': 'text/plain'
+        'content-Type': 'application.json'
     });
-    const myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8');
-    myReadStream.pipe(res);
+    const myObj = {
+        name: 'john',
+        job: 'developer',
+        age: 29
+    };
+    res.end(JSON.stringify(myObj));
 });
 
 server.listen(3000);
-console.log('App listening on PORT 3000');
+console.log('APP LISTENING TO THE PORT');

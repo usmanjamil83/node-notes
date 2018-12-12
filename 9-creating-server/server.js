@@ -1,8 +1,10 @@
 const http = require('http');
 
-const server = http.createServer(function(req, res){
+const server = http.createServer(function (req, res) {
     console.log('request was made: ' + req.url);
-    res.writeHead(200, {'Content-type': 'text/plain'});
+    res.writeHead(200, {
+        'Content-type': 'text/plain'
+    });
     res.end('Hello');
 });
 
